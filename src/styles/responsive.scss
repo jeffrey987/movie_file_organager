@@ -1,0 +1,21 @@
+// styles/responsive.scss
+.video-card {
+    margin-bottom: 20px;
+    
+    .video-thumbnail {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    
+    @media (max-width: 768px) {
+      .video-thumbnail {
+        height: 150px;
+      }
+    }
+  }
+  
+  .el-pagination {
+    margin-top: 20px;
+    justify-content: center;
+  }
