@@ -29,7 +29,7 @@ interface VideoItem {
     author: string
     views: number
 }
-
+const total = ref(100)
 // 使用 ref 创建响应式数据
 const videoList = ref<VideoItem[]>([
     {
@@ -47,4 +47,7 @@ const videoList = ref<VideoItem[]>([
         views: 8560
     }
 ])
+function handlePageChange() {
+
+}
 </script>
