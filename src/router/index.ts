@@ -5,12 +5,17 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: () => import('@/views/HomeView.vue') // 确保路径正确
+    component: () => import('../views/IndexView.vue') // 确保路径正确
+  },
+  {
+    path: '/list',
+    name: 'List',
+    component: () => import('../views/HomeView.vue')
   },
   {
     path: '/upload',
     name: 'Upload',
-    component: () => import('@/views/UploadView.vue')
+    component: () => import('../views/UploadView.vue')
   }
 ]
 

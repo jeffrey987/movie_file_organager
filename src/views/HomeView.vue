@@ -21,6 +21,7 @@
 <!-- HomeView.vue -->
 <script setup lang="ts">
 import { ref } from 'vue'
+import { getDiscover, getVideos } from '../api/tmdb'
 
 interface VideoItem {
     id: number
@@ -50,4 +51,10 @@ const videoList = ref<VideoItem[]>([
 function handlePageChange() {
 
 }
+function getDiscover() {
+    var result = getDiscover();
+    console.log(result)
+
+}
+getDiscover();
 </script>
